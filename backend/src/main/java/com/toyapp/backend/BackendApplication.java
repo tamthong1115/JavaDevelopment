@@ -1,4 +1,4 @@
-package com.tamthong.backend;
+package com.toyapp.backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
