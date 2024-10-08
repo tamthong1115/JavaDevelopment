@@ -1,0 +1,16 @@
+services:
+  postgres:
+    container_name: postgres_container_toys
+    image: postgres:17
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
+      PGDATA: /data/postgres
+    volumes:
+       - postgres_toys:/data/postgres
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+ 
+volumes:
+    postgres_toys:
