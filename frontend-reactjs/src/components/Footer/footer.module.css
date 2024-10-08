@@ -1,54 +1,98 @@
 .footer {
-  width: 100%;
-  background-color: #f5f3ed;
-  color: black;
-  margin-top: 50px;
-  padding-top: 52px;
-  padding-bottom: 50px;
+    width: 100%;
+    background-color: #f5f3ed;
+    color: black;
+    margin-top: 50px;
+    padding-top: 52px;
+    padding-bottom: 50px;
 }
 
 .footer__trust-pilot {
-  height: 150px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+    height: 150px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .footer__links {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  justify-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
 }
 
 .button {
-  background-color: #6351b5;
-  border-radius: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  line-height: inherit;
-  transition: 0.3s;
+    background-color: #6351b5;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    line-height: inherit;
+    transition: 0.3s;
 }
 
 .button:hover {
-  background-color: #9471ff;
-  transition: 0.3s;
+    background-color: #9471ff;
+    transition: 0.3s;
 }
 
 .footer__navigates {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 11px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 11px;
 }
 
 .footer__navigates--item {
-  border-right: 1px solid black;
-  padding-right: 11px;
-  font-size: 13px;
-  line-height: 15px;
+    border-right: 1px solid black;
+    padding-right: 11px;
+    font-size: 13px;
+    line-height: 15px;
 }
+
 .footer__navigates--item:last-child {
-  border-right: none;
+    border-right: none;
+}
+
+/* Phần CSS cho phần đăng ký nhận tin */
+.footer__subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 0;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.subscribe-button {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.subscribe-button:hover {
+    background-color: #d62839;
+}
+
+.footer__links div {
+    margin-right: 20px;
 }
